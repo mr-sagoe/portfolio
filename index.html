@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebenezer Sagoe's Project Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Ebenezer Sagoe</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<!--
-<div class="overlay">
-    <div class="overlay-content">
-        <h1>🚧 Under Construction 🚧</h1>
-        <p>I'm working on this site. Please check back soon!</p>
-    </div>
-</div>
--->  
 <body>
-    <header>
-        <h1>Ebenezer Sagoe</h1>
-        <p>Welcome to my portfolio</p>
-    </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1</h3>
-                <p>Description of your project.</p>
-                <a href="projects/project1.html">View Project</a>
-            </li>
-            <li>
-                <h3>Project 2</h3>
-                <p>Description of your project.</p>
-                <a href="projects/project2.html">View Project</a>
-            </li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mr.eb.sagoe@gmail.com">mr.eb.sagoe@gmail.com</a></p>
-        <p>LinkedIn: <a href="#">http://www.linkedin.com/in/ebenezer-sagoe/</a></p>
-    </section>
-    <footer>
-  <p>Author: Ebenezer Sagoe</p>
-    </footer> 
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Sagoe.</div>
+    <nav>
+      <a href="projects.html">Projects</a>
+      <a href="Ebenezer Sagoe Resume.pdf" target="_blank" class="resume-btn">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="hero">
+    <img
+      src="Professional Potrait - small.jpg"
+      alt="Eben profile picture"
+      class="profile-img"
+    />
+
+    <h1>I'm Ebenezer Sagoe</h1>
+
+    <p class="subtitle">
+        Electrical Engineering graduate from Bucknell University.
+        My interests are in power systems, renewable energy, and electronics.
+    </p>
+
+    <div class="socials">
+      <a href="mailto:mr.eb.sagoe@gmail.com" aria-label="Email me"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/mr-sagoe" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/ebenezer-sagoe" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </main>
+
 </body>
 </html>
