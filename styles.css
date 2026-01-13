@@ -59,8 +59,8 @@ body {
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 325px;
+  height: 325px;
   border-radius: 30%;
   object-fit: cover;
   margin-bottom: 24px;
@@ -111,47 +111,77 @@ body {
   }
 }
 
-.project-list {
+.projects {
+  max-width: 1000px;
+  margin: 120px auto 80px;
+  padding: 0 24px;
+}
+
+.projects h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Grid */
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
-.project {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+/* Project Card */
+.project-card {
+  background-color: #22252a;
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-.project h2 {
-  margin-top: 0;
-  color: #333;
+.project-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
-.project p {
-  color: #666;
-  margin: 1rem 0;
-}
-
-.project-link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
+.project-card a {
+  color: var(--accent);
+  font-weight: 500;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
 
-.project-link:hover {
-  background-color: #0056b3;
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.overlay-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 1.2em;
+    color: #444;
 }
