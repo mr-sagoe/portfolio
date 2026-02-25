@@ -38,6 +38,13 @@ body {
   text-decoration: none;
   margin-left: 24px;
   font-weight: 500;
+  padding-bottom: 4px;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.navbar nav a.active {
+  border-bottom: 4px solid var(--accent);
 }
 
 .resume-btn {
